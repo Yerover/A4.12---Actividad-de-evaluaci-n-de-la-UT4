@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Últimas Noticias Destacadas</title>
+        <link>http://www.urban.com/noticias</link>
+        <description>Últimas noticias destacadas de Urban</description>
+        <language>es</language>
+        <lastBuildDate>Mon, 19 Jan 2024 12:00:00 GMT</lastBuildDate>
+        
+        <item>
+            <title>Nuevo catálogo de verano</title>
+            <description>¡Descubre nuestro nuevo catálogo de moda urbana para esta temporada de verano!</description>
+            <pubDate>Sun, 19 Jan 2024 08:00:00 GMT</pubDate>
+            <category>Moda</category>
+            <category>Noticias</category>
+            <image>http://www.urban.com/catalogo.jpg</image>
+        </item>
+        
+        <item>
+            <title>Entrevista con el diseñador principal</title>
+            <description>Lee la entrevista exclusiva con nuestro diseñador principal sobre las tendencias de moda urbana.</description>
+            <pubDate>Sat, 18 Jan 2024 10:00:00 GMT</pubDate>
+            <category>Moda</category>
+            <category>Noticias</category>
+            <image>http://www.urban.com/entrevista.jpg</image>
+        </item>
+        
+        <item>
+            <title>Evento de lanzamiento de la nueva colección</title>
+            <description>¡Asiste al evento de lanzamiento de nuestra última colección en la tienda principal!</description>
+            <pubDate>Fri, 17 Jan 2024 15:00:00 GMT</pubDate>
+            <category>Eventos</category>
+            <category>Noticias</category>
+            <image>http://www.urban.com/evento.jpg</image>
+        </item>
+    </channel>
+</rss>

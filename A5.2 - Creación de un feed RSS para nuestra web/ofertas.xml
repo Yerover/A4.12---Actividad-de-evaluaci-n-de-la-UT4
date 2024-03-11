@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>Ofertas de la Semana</title>
+        <link>http://www.urban.com/ofertas</link>
+        <description>Ofertas semanales de Urban</description>
+        <language>es</language>
+        <lastBuildDate>Mon, 19 Jan 2024 12:00:00 GMT</lastBuildDate>
+        
+        <item>
+            <title>Zapatos urbanos para hombre</title>
+            <description>¡Descubre nuestros nuevos zapatos urbanos para hombre!</description>
+            <pubDate>Sun, 19 Jan 2024 08:00:00 GMT</pubDate>
+            <category>Zapatos</category>
+            <category>Ofertas</category>
+            <image>http://www.urban.com/zapatos.jpg</image>
+        </item>
+        
+        <item>
+            <title>Camiseta urbana para mujer</title>
+            <description>¡Esta semana, aprovecha nuestras camisetas urbanas para mujer con descuento!</description>
+            <pubDate>Sat, 18 Jan 2024 10:00:00 GMT</pubDate>
+            <category>Ropa</category>
+            <category>Ofertas</category>
+            <image>http://www.urban.com/camiseta.jpg</image>
+        </item>
+        
+        <item>
+            <title>Chaqueta urbana unisex</title>
+            <description>¡No te pierdas nuestra oferta especial en chaquetas urbanas unisex!</description>
+            <pubDate>Fri, 17 Jan 2024 15:00:00 GMT</pubDate>
+            <category>Ropa</category>
+            <category>Ofertas</category>
+            <image>http://www.urban.com/chaqueta.jpg</image>
+        </item>
+    </channel>
+</rss>

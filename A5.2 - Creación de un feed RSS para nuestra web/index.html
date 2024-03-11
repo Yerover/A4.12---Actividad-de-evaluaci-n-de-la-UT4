@@ -12,6 +12,7 @@
     <link href="bootstrap-5.3.2-dist/css/bootstrap.css" rel="stylesheet">
     <!-- script de Bootstrap -->
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlaces a los canales RSS -->
 </head>
 <style>
 /* Estilos generales */
@@ -122,19 +123,23 @@ footer {
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                           <img src="house-solid.svg" alt="" width="30" height="30">
-                          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                          <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Inicio</a>
                         </li>
                         <li class="nav-item">
                           <img src="shirt-solid.svg" alt="" width="30" height="30">
-                          <a class="nav-link" href="Ropa.html"><i class="fas fa-tshirt"></i> Ropa</a>
+                          <a class="nav-link" href="Ropa.html"><i class="fas fa-tshirt"></i>Ropa</a>
                         </li>
                         <li class="nav-item">
                         <img src="shoe-prints-solid.svg" alt="" width="30" height="30">
-                        <a class="nav-link" href="Calzados.html"><i class="fas fa-shoe-prints"></i> Calzados</a>
+                        <a class="nav-link" href="Calzados.html"><i class="fas fa-shoe-prints"></i>Calzados</a>
                         </li>
                         <li class="nav-item">
                         <img src="glasses-solid.svg" alt="" width="30" height="30"> 
-                        <a class="nav-link" href="Accesorios.html"><i class="fas fa-shopping-bag"></i> Accesorios</a>
+                        <a class="nav-link" href="Accesorios.html"><i class="fas fa-shopping-bag"></i>Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                          <img src="pic_rss.gif" alt="" width="30" height="30"> 
+                          <a class="nav-link" href="RSS.html"><i class="fas fa-shopping-bag"></i>RSS</a>
                         </li>
                     </ul>
                 </div>
@@ -142,67 +147,70 @@ footer {
         </nav>
     </header>
     
-    <!-- Sección de camisetas -->
-    <section id="productos" class="py-5">
+    <!-- Sección de descripción -->
+    <section id="descripcion" class="bg-light text-center py-5">
         <div class="container">
-          <h2 class="text-center mb-4 " style="font-weight: 700; font-family: Montserrat;">Camisetas</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Moda Urbana para Todos</h2>
+                    <p>En Urban nos especializamos en traer ropa estilo urbano, explora nuestra colección de ropa, zapatos y accesorios para expresar tu estilo único en la ciudad.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="imagen-presentación.jpg" alt="Imagen de moda urbana" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de carrusel -->
+    <section id="carrusel" class="py-5">
+        <div class="container">
           <div class="row justify-content-center">
-            <div class="col-md-10">
-              <div class="row">
-                <div class="col-md-4 mb-3">
-                  <div class="card h-100 d-flex flex-column">
-                    <div class="card-header">
-                      <h4 class="card-title text-center">Camiseta urbana para hombre de color blanco.</h4>
-                      <img src="camiseta blanca.jpg" alt="Camiseta blanca" class="img-fluid" width="250">
+            <div class="col-md-8 text-center">
+              <h2 style="font-size: 1.5rem; font-family: montserrat; font-weight: 700; color: rgb(255, 255, 255);">Destacado</h2>
+              <div class="carousel slide" id="testimonials-carousel" data-bs-ride="carousel">
+                <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="testimonial">
+                      <img src="New.jpg" alt="Nuevo" class="img-fluid rounded-circle mb-3" width="100">
+                      <em style="font-size: 1.2rem; color: white; font-style: italic;">Nuevas Prendas disponibles</em>
                     </div>
-                    <div class="card-body text-center bg-light">
-                      <h2>30€</h2>
-                      <button type="button" class="btn btn-primary">Comprar</button>
+                  </div>
+                  <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-item">
+                    <div class="testimonial">
+                      <img src="Descuento.jpg" alt="Descuento" class="img-fluid rounded-circle mb-3" width="100">
+                      <em style="font-size: 1.2rem; color: white; font-style: italic;">Descuentos</em>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card h-100 d-flex flex-column">
-                    <div class="card-header">
-                        <h4 class="card-title text-center">Camiseta urbana para mujer.</h4>
-                        <img src="camiseta emo.jpg" alt="Camiseta mujer" class="img-fluid" width="310">
-                      </div>
-                      <div class="card-body text-center bg-light">
-                        <h2>20€</h2>
-                        <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card h-100 d-flex flex-column">
-                    <div class="card-header">
-                        <h4 class="card-title text-center">Camiseta urbana roja.</h4>
-                        <img src="Camiseta roja.jpg" alt="Camiseta roja" class="img-fluid" width="230">
-                      </div>
-                      <div class="card-body text-center bg-light">
-                        <h2>40€</h2>
-                        <button type="button" class="btn btn-primary">Comprar</button>
-                    </div>
-                  </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-       <!-- Sección de chaquetas -->
+    
+    <!-- Sección de productos destacados -->
     <section id="productos" class="py-5">
         <div class="container">
-          <h2 class="text-center mb-4 " style="font-weight: 700; font-family: Montserrat;">Chaquetas</h2>
+          <h2 class="text-center mb-4 " style="font-weight: 700; font-family: Montserrat;">Algunas de nuestras prendas</h2>
           <div class="row justify-content-center">
             <div class="col-md-10">
               <div class="row">
                 <div class="col-md-4 mb-3">
                   <div class="card h-100 d-flex flex-column">
                     <div class="card-header">
-                      <h4 class="card-title text-center">Chaqueta azul.</h4>
-                      <img src="Chaqueta azul.jpg" alt="Chaqueta azul" class="img-fluid" width="290">
+                      <h4 class="card-title text-center">Zapatos urbanos para hombre.</h4>
+                      <img src="zapatos-urbanos-hombre.jpg" alt="Zapatos urbanos" class="img-fluid" width="300">
                     </div>
                     <div class="card-body text-center bg-light">
                       <h2>50€</h2>
@@ -213,11 +221,11 @@ footer {
                 <div class="col-md-4 mb-3">
                   <div class="card h-100 d-flex flex-column">
                     <div class="card-header">
-                        <h4 class="card-title text-center">Chaqueta elegante.</h4>
-                        <img src="Chaqueta elegante.jpg" alt="Chaqueta elegante" class="img-fluid" width="250">
+                        <h4 class="card-title text-center">Camiseta urbana para hombre.</h4>
+                        <img src="Camiseta urbana.jpg" alt="Camiseta urbana" class="img-fluid" width="300">
                       </div>
                       <div class="card-body text-center bg-light">
-                        <h2>60€</h2>
+                        <h2>40€</h2>
                         <button type="button" class="btn btn-primary">Comprar</button>
                     </div>
                   </div>
@@ -225,11 +233,11 @@ footer {
                 <div class="col-md-4 mb-3">
                   <div class="card h-100 d-flex flex-column">
                     <div class="card-header">
-                        <h4 class="card-title text-center">Chaqueta para invierno.</h4>
-                        <img src="Chaqueta para invierno.jpg" alt="Chaqueta para invierno" class="img-fluid" width="280">
+                        <h4 class="card-title text-center">Chaqueta urbana de invierno para mujer.</h4>
+                        <img src="Chaqueta.jpg" alt="Chaqueta urbana para mujer" class="img-fluid" width="230">
                       </div>
                       <div class="card-body text-center bg-light">
-                        <h2>40€</h2>
+                        <h2>60€</h2>
                         <button type="button" class="btn btn-primary">Comprar</button>
                     </div>
                   </div>
@@ -239,56 +247,6 @@ footer {
           </div>
         </div>
       </section>
-
- <!-- Sección de Pantalones -->
- <section id="productos" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4 " style="font-weight: 700; font-family: Montserrat;">Pantalones</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <div class="row">
-            <div class="col-md-4 mb-3">
-              <div class="card h-100 d-flex flex-column">
-                <div class="card-header">
-                  <h4 class="card-title text-center">Pantalon de cargo.</h4>
-                  <img src="Pantalones de cargo.jpg" alt="Pantalon de cargo" class="img-fluid" width="290">
-                </div>
-                <div class="card-body text-center bg-light">
-                  <h2>50€</h2>
-                  <button type="button" class="btn btn-primary">Comprar</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card h-100 d-flex flex-column">
-                <div class="card-header">
-                    <h4 class="card-title text-center">Pantalon elástico.</h4>
-                    <img src="pantalon elástico.jpg" alt="Pantalon elástico" class="img-fluid" width="260">
-                  </div>
-                  <div class="card-body text-center bg-light">
-                    <h2>60€</h2>
-                    <button type="button" class="btn btn-primary">Comprar</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card h-100 d-flex flex-column">
-                <div class="card-header">
-                    <h4 class="card-title text-center">Pantalon azul.</h4>
-                    <img src="pantalon azul.jpg" alt="Pantalon azul" class="img-fluid" width="280">
-                  </div>
-                  <div class="card-body text-center bg-light">
-                    <h2>40€</h2>
-                    <button type="button" class="btn btn-primary">Comprar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
       <!-- Pie de página -->
       <footer class="bg-dark text-light p-3">
         <div class="container">

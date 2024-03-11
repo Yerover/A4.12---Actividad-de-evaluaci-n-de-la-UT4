@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban</title>
+    <!-- Favicon de la página -->
+    <link rel="icon" type="image/x-icon" href="Urban.ico">
+    <!-- Enlaces a las fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- script de Bootstrap -->
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlaces a los canales RSS -->
+</head>
+<style>
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333333; /* Color del texto del logo */
+}
+</style>
+<body>
+    <!-- Header con barra de navegación -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jpg" alt="Logo de la tienda" width="50">
+                    Urban/RSS
+                </a>
+         <!-- Menú de navegación -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <img src="house-solid.svg" alt="" width="30" height="30">
+                  <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <img src="shirt-solid.svg" alt="" width="30" height="30">
+                  <a class="nav-link" href="Ropa.html"><i class="fas fa-tshirt"></i>Ropa</a>
+                </li>
+                <li class="nav-item">
+                <img src="shoe-prints-solid.svg" alt="" width="30" height="30">
+                <a class="nav-link" href="Calzados.html"><i class="fas fa-shoe-prints"></i>Calzados</a>
+                </li>
+                <li class="nav-item">
+                <img src="glasses-solid.svg" alt="" width="30" height="30"> 
+                <a class="nav-link" href="Accesorios.html"><i class="fas fa-shopping-bag"></i>Accesorios</a>
+                </li>
+                <li class="nav-item">
+                  <img src="pic_rss.gif" alt="" width="30" height="30"> 
+                  <a class="nav-link" href="RSS.html"><i class="fas fa-shopping-bag"></i>RSS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+    <!-- Sección de rss -->
+    <section class="bg-light py-1">
+    <div>
+        <a href="ofertas.xml">
+        <img src="pic_rss.gif">
+    </a>
+    <p>Ofertas de la semana</p>
+    </div>
+    <div>
+    <a href="noticias.xml">
+        <img src="pic_rss.gif">
+    </a>
+    <p>Últimas noticias</p>
+    </div>
+    </section>
+    <!-- Pie de página -->
+    <footer class="bg-dark text-light p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Redes Sociales</h5>
+                    <a href="https://www.facebook.com/groups/Urban/" target="_blank"><img src="facebook.png" alt="facebook" width="50"> Facebook</a><br>
+                    <a href="https://twitter.com/Urban" target="_blank"><img src="Twitter.png" alt="twitter" width="50"> Twitter</a><br>
+                    <a href="https://www.instagram.com/Urban/" target="_blank"><img src="Instagram.png" alt="instagram" width="50"> Instagram</a>
+                </div>
+    
+                <div class="col-md-6">
+                    <h5>Contacto</h5>
+                    <p>Correo electrónico: <a href="mailto:info@example.com">Urban@gmail.com</a></p>
+                    <p>GitHub: <a href="https://github.com/Yerover/A4.12-Actividad-de-evaluacion" target="_blank">Mi Repositorio</a></p>
+                </div>
+            </div>
+        </div>
+      </footer>
+</body>
