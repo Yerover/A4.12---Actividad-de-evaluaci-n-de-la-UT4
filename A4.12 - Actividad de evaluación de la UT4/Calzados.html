@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban</title>
+    <!-- Favicon de la página -->
+    <link rel="icon" type="image/x-icon" href="Urban.ico">
+    <!-- Enlaces a las fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- script de Bootstrap -->
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para el header y la barra de navegación */
+.navbar {
+    background-color: #ffffff; /* Color de fondo de la barra de navegación */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333333; /* Color del texto del logo */
+}
+
+.navbar-toggler {
+    border-color: #333333; /* Color del botón de menú en dispositivos pequeños */
+}
+
+.navbar-toggler-icon {
+    color: #333333; /* Color del icono del botón de menú en dispositivos pequeños */
+}
+
+.navbar-nav .nav-link {
+    color: #333333; /* Color del texto de los enlaces del menú */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff9900; /* Color del texto de los enlaces del menú al pasar el ratón */
+}
+
+/* Estilos para la sección de descripción */
+#descripcion {
+    background-color: #f8f9fa; /* Color de fondo de la sección de descripción */
+}
+
+#descripcion h2 {
+    color: #333333; /* Color del título de la sección de descripción */
+}
+
+/* Estilos para la sección del carrusel */
+#carrusel {
+    background-color: #ffffff; /* Color de fondo de la sección del carrusel */
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.7); /* Color de fondo de la caja de texto del carrusel */
+    color: #333333; /* Color del texto del carrusel */
+}
+
+/* Estilos para la sección de productos destacados */
+#productos {
+    background-color: #f8f9fa; /* Color de fondo de la sección de productos destacados */
+}
+
+.card {
+    border: none; /* Quita el borde de las tarjetas de productos */
+}
+
+.card-img-top {
+    height: 200px; /* Altura de las imágenes de productos */
+    object-fit: cover; /* Ajusta las imágenes para que cubran todo el contenedor */
+}
+
+.card-title {
+    font-weight: bold; /* Peso de la fuente del título de los productos */
+}
+
+.card-text {
+    color: #666666; /* Color del texto de los productos */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333333; /* Color de fondo del footer */
+    color: #ffffff; /* Color del texto del footer */
+}
+
+#carrusel {
+        background-size: cover;
+        background-position: center;
+        background-color: #000000;
+        }
+</style>
+<body>
+    <!-- Header con barra de navegación -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="logo.jpg" alt="Logo de la tienda" width="50">
+                    Urban
+                </a>
+                <!-- Barra de búsqueda -->
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+                <!-- Menú de navegación -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                          <img src="house-solid.svg" alt="" width="30" height="30">
+                          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <img src="shirt-solid.svg" alt="" width="30" height="30">
+                          <a class="nav-link" href="Ropa.html"><i class="fas fa-tshirt"></i> Ropa</a>
+                        </li>
+                        <li class="nav-item">
+                        <img src="shoe-prints-solid.svg" alt="" width="30" height="30">
+                        <a class="nav-link" href="Calzados.html"><i class="fas fa-shoe-prints"></i> Calzados</a>
+                        </li>
+                        <li class="nav-item">
+                        <img src="glasses-solid.svg" alt="" width="30" height="30"> 
+                        <a class="nav-link" href="Accesorios.html"><i class="fas fa-shopping-bag"></i> Accesorios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Sección de Calzados -->
+    <section id="productos" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4 " style="font-weight: 700; font-family: Montserrat;">Calzados</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card h-100 d-flex flex-column">
+                    <div class="card-header">
+                      <h4 class="card-title text-center">Zapatos negros.</h4>
+                      <img src="Zapatos negros.jpg" alt="Zapatos negros" class="img-fluid" width="390">
+                    </div>
+                    <div class="card-body text-center bg-light">
+                      <h2>50€</h2>
+                      <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card h-100 d-flex flex-column">
+                    <div class="card-header">
+                        <h4 class="card-title text-center">Zapatos elegantes.</h4>
+                        <img src="Zapatos elegantes.jpg" alt="Zapatos elegantes" class="img-fluid" width="310">
+                      </div>
+                      <div class="card-body text-center bg-light">
+                        <h2>80€</h2>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card h-100 d-flex flex-column">
+                    <div class="card-header">
+                        <h4 class="card-title text-center">Zapatos deportivos.</h4>
+                        <img src="Zapatos deportivos.jpg" alt="Zapatos deportivos" class="img-fluid" width="350">
+                      </div>
+                      <div class="card-body text-center bg-light">
+                        <h2>40€</h2>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pie de página -->
+      <footer class="bg-dark text-light p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Redes Sociales</h5>
+                    <a href="https://www.facebook.com/groups/Urban/" target="_blank"><img src="facebook.png" alt="facebook" width="50"> Facebook</a><br>
+                    <a href="https://twitter.com/Urban" target="_blank"><img src="Twitter.png" alt="twitter" width="50"> Twitter</a><br>
+                    <a href="https://www.instagram.com/Urban/" target="_blank"><img src="Instagram.png" alt="instagram" width="50"> Instagram</a>
+                </div>
+    
+                <div class="col-md-6">
+                    <h5>Contacto</h5>
+                    <p>Correo electrónico: <a href="mailto:info@example.com">Urban@gmail.com</a></p>
+                    <p>GitHub: <a href="https://github.com/Yerover/A4.12-Actividad-de-evaluacion" target="_blank">Mi Repositorio</a></p>
+                </div>
+            </div>
+        </div>
+      </footer>
+</body>
